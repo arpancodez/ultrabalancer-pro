@@ -1,0 +1,176 @@
+{
+  "app": {
+    "name": "UltraBalancer Pro",
+    "version": "1.0.0",
+    "description": "High-Performance Load Balancer for Modern Applications"
+  },
+  "server": {
+    "starting": "Starting UltraBalancer Pro server...",
+    "started": "Server started successfully on {host}:{port}",
+    "stopping": "Stopping server...",
+    "stopped": "Server stopped successfully",
+    "restarting": "Restarting server...",
+    "restarted": "Server restarted successfully",
+    "error": "Server error: {error}"
+  },
+  "backends": {
+    "title": "Backend Servers",
+    "adding": "Adding backend server: {host}:{port}",
+    "added": "Backend server added successfully",
+    "removing": "Removing backend server: {id}",
+    "removed": "Backend server removed successfully",
+    "enabling": "Enabling backend server: {id}",
+    "enabled": "Backend server enabled successfully",
+    "disabling": "Disabling backend server: {id}",
+    "disabled": "Backend server disabled successfully",
+    "not_found": "Backend server not found: {id}",
+    "healthy": "Healthy",
+    "unhealthy": "Unhealthy",
+    "status": {
+      "healthy": "All backends are healthy",
+      "degraded": "{count} backend(s) are unhealthy",
+      "down": "All backends are down"
+    }
+  },
+  "health_checks": {
+    "title": "Health Checks",
+    "running": "Running health check on {backend}...",
+    "passed": "Health check passed for {backend}",
+    "failed": "Health check failed for {backend}",
+    "timeout": "Health check timed out for {backend}",
+    "interval": "Health check interval: {seconds}s",
+    "threshold": "Unhealthy threshold: {count} consecutive failures"
+  },
+  "load_balancing": {
+    "algorithms": {
+      "round_robin": "Round Robin",
+      "least_connections": "Least Connections",
+      "ip_hash": "IP Hash",
+      "weighted_round_robin": "Weighted Round Robin",
+      "least_response_time": "Least Response Time"
+    },
+    "selecting": "Selecting backend using {algorithm} algorithm",
+    "selected": "Selected backend: {backend}",
+    "no_backend": "No healthy backend available"
+  },
+  "connections": {
+    "active": "Active Connections",
+    "total": "Total Connections",
+    "accepting": "Accepting new connection from {client}",
+    "established": "Connection established: {id}",
+    "closing": "Closing connection: {id}",
+    "closed": "Connection closed: {id}",
+    "timeout": "Connection timeout: {id}",
+    "limit_reached": "Connection limit reached for backend: {backend}"
+  },
+  "config": {
+    "loading": "Loading configuration from {file}...",
+    "loaded": "Configuration loaded successfully",
+    "validating": "Validating configuration...",
+    "valid": "Configuration is valid",
+    "invalid": "Configuration is invalid: {error}",
+    "reloading": "Reloading configuration...",
+    "reloaded": "Configuration reloaded successfully",
+    "not_found": "Configuration file not found: {file}"
+  },
+  "metrics": {
+    "title": "Performance Metrics",
+    "requests_total": "Total Requests",
+    "requests_per_second": "Requests/Second",
+    "response_time_avg": "Average Response Time",
+    "response_time_p95": "95th Percentile Response Time",
+    "response_time_p99": "99th Percentile Response Time",
+    "error_rate": "Error Rate",
+    "success_rate": "Success Rate",
+    "uptime": "Uptime",
+    "cpu_usage": "CPU Usage",
+    "memory_usage": "Memory Usage",
+    "network_in": "Network In",
+    "network_out": "Network Out",
+    "exporting": "Exporting metrics to {file}...",
+    "exported": "Metrics exported successfully"
+  },
+  "logging": {
+    "levels": {
+      "debug": "Debug",
+      "info": "Info",
+      "warning": "Warning",
+      "error": "Error",
+      "critical": "Critical"
+    },
+    "request": "[{method}] {path} - {status} - {duration}ms",
+    "backend_request": "Backend request: {backend} {method} {path}",
+    "backend_response": "Backend response: {backend} - {status} - {duration}ms"
+  },
+  "errors": {
+    "generic": "An error occurred: {message}",
+    "timeout": "Request timeout",
+    "connection_refused": "Connection refused by backend",
+    "backend_unavailable": "No healthy backend available",
+    "invalid_request": "Invalid request",
+    "rate_limit_exceeded": "Rate limit exceeded",
+    "authentication_failed": "Authentication failed",
+    "authorization_failed": "Authorization failed",
+    "internal_error": "Internal server error"
+  },
+  "cli": {
+    "commands": {
+      "start": "Start the load balancer server",
+      "stop": "Stop the load balancer server",
+      "restart": "Restart the load balancer server",
+      "status": "Show server status and metrics",
+      "backends": "Manage backend servers",
+      "config": "Manage configuration",
+      "health": "Manage health checks",
+      "logs": "View server logs",
+      "metrics": "Export metrics data"
+    },
+    "options": {
+      "host": "Host to bind to",
+      "port": "Port to bind to",
+      "config": "Configuration file path",
+      "workers": "Number of worker processes",
+      "daemon": "Run as daemon",
+      "graceful": "Graceful shutdown",
+      "timeout": "Operation timeout",
+      "format": "Output format",
+      "output": "Output file",
+      "follow": "Follow log output",
+      "lines": "Number of lines to show"
+    },
+    "prompts": {
+      "confirm_remove": "Are you sure you want to remove this backend?",
+      "confirm_stop": "Are you sure you want to stop the server?",
+      "cancelled": "Operation cancelled"
+    }
+  },
+  "status": {
+    "running": "Running",
+    "stopped": "Stopped",
+    "starting": "Starting",
+    "stopping": "Stopping",
+    "restarting": "Restarting",
+    "error": "Error",
+    "degraded": "Degraded"
+  },
+  "messages": {
+    "welcome": "Welcome to UltraBalancer Pro",
+    "goodbye": "Goodbye! UltraBalancer Pro has been shut down.",
+    "processing": "Processing request...",
+    "success": "Operation completed successfully",
+    "failure": "Operation failed",
+    "warning": "Warning: {message}",
+    "info": "Info: {message}"
+  },
+  "units": {
+    "seconds": "seconds",
+    "milliseconds": "milliseconds",
+    "bytes": "bytes",
+    "kilobytes": "KB",
+    "megabytes": "MB",
+    "gigabytes": "GB",
+    "percent": "%",
+    "requests": "requests",
+    "connections": "connections"
+  }
+}
